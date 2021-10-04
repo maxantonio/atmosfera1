@@ -32,9 +32,6 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      bodyAttributes={{
-          class: 'page-template-default page page-id-2216 theme-ashton woocommerce-no-js menu-transparent lightbox-white leftalign loftloader-lite-enabled elementor-default elementor-kit-30 elementor-page elementor-page-2216'
-      }}
       title={title}
       titleTemplate={title}
       meta={[
@@ -71,7 +68,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+        <body data-rsssl="1" className="page-template-default page page-id-2216 theme-ashton woocommerce-no-js menu-transparent lightbox-white leftalign loftloader-lite-enabled elementor-default elementor-kit-30 elementor-page elementor-page-2216" />
+    </Helmet>
   )
 }
 

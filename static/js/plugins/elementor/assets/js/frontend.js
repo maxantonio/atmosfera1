@@ -5957,4 +5957,3 @@ try {
 
 },
 0,[["../assets/dev/js/frontend/frontend.js","webpack.runtime","frontend-modules"]]]);
-//# sourceMappingURL=frontend.js.map

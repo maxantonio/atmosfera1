@@ -1,27 +1,40 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {useStaticQuery, graphql} from "gatsby"
-import "../../../static/css/font-icons.min.css"
-import "../../../static/css/constantes.css"
-import "../../../static/css/theme-vendors.min.css"
-import "../../../static/css/style.css"
-import "../../../static/css/responsive.css"
-import "../../../static/css/hide_recaptcha.css"
 
-import "../../../static/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css"
-import "../../../static/revolution/fonts/font-awesome/css/font-awesome.css"
-import "../../../static/revolution/css/settings.css"
-import "../../../static/revolution/css/layers.css"
-import "../../../static/revolution/css/navigation.css"
+// import "../../../static/css/reset.css"
+// import "../../../static/css/wordpress.css"
+// import "../../../static/css/style.css"
+// import "../../../static/css/modulobox.css"
+// import "../../../static/css/left-align-menu.css"
+// import "../../../static/css/font-awesome.min.css"
+// import "../../../static/css/themify-icons.css"
+// import "../../../static/css/tooltipster.css"
+// import "../../../static/css/demo.css"
 
-import "../../../static/css/david.css"
-import "../../../static/css/antonio.css"
-import "../../../static/css/tania.css"
+// import "../../../static/js/plugins/loftloader/assets/css/loftloader.min.css"
+// import "../../../static/js/plugins/elementor/assets/css/frontend.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/swiper.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/animatedheadline.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/justifiedGallery.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/flickity.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/owl.theme.default.min.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/switchery.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/ashton-elementor.css"
+// import "../../../static/js/plugins/ashton-elementor/assets/css/ashton-elementor-responsive.css"
+// import "../../../static/css/responsive.css"
+// import "../../../static/js/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css"
+// import "../../../static/js/plugins/elementor/assets/lib/font-awesome/css/regular.css"
+// import "../../../static/js/plugins/elementor/assets/lib/font-awesome/css/solid.css"
+// import "../../../static/js/plugins/elementor/assets/lib/animations/animations.min.css"
+// import "../../../static/js/plugins/elementor/assets/lib/font-awesome/css/brands.css"
+// import "../../../static/css/custom-css.css"
+
+import logo from "../../../static/upload/logo@2x.png"
 import Header from "./header"
 import Footer from "../footer"
 import Mobile_Menu from "../mobile_menu"
 import {LangProvider} from "../../context/LangContext";
-import preloader from "../../../static/images/latam_black-grueso.svg"
 
 const Layout = ({children, location}) => {
     const data = useStaticQuery(graphql`
@@ -35,25 +48,44 @@ const Layout = ({children, location}) => {
   `)
 
     return (
-        <>
             <LangProvider>
-                <div id="perspective" style="">
+                {/*<div id="loftloader-wrapper" className="pl-imgloading" data-show-close-time="15000"*/}
+                     {/*data-max-load-time="0">*/}
+                    {/*<div className="loader-inner">*/}
+                        {/*<div id="loader">*/}
+                            {/*<div className="imgloading-container"><span style={{backgroundImage: 'url("/upload/logo@2x.png")'}}/></div>*/}
+                            {/*<img width="130" height="52" data-no-lazy="1" className="skip-lazy" alt="loader image"*/}
+                                 {/*src={logo}/>*/}
+                        {/*</div>*/}
+                    {/*</div>*/}
+                    {/*<div className="loader-section section-fade"/>*/}
+                    {/*<div className="loader-close-button" style={{display: 'none'}}><span*/}
+                        {/*className="screen-reader-text">Close</span></div>*/}
+                {/*</div>*/}
+                <div id="perspective">
                     <Mobile_Menu/>
                     <div id="wrapper" className="hasbg transparent">
-                        <Header location={location} siteTitle={data.site.siteMetadata.title}/>
+                        <Header/>
+                        <div id="page-content-wrapper" className="no-title">
+                            <div className="inner">
+                                <div className="inner-wrapper">
+                                    <div className="sidebar-content fullwidth">
+                                        <div data-elementor-type="wp-page" data-elementor-id="2216"
+                                             className="elementor elementor-2216"
+                                             data-elementor-settings="[]">
+                                            <div className="elementor-section-wrap">
+                                               {children}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <Footer/>
+                    <a id="go-to-top" href="#"><span className="ti-arrow-up"></span></a>
                 </div>
-
-                {/*<div className="preloader text-center">*/}
-                {/*<img src={preloader} alt=""/>*/}
-                {/*</div>*/}
-                {/*<main>{children}</main>*/}
-                {/*<a aria-label="scroll-top" className="scroll-top-arrow" href="#top"><i*/}
-                {/*className="feather icon-feather-arrow-up"></i></a>*/}
-                {/*<Footer/>*/}
             </LangProvider>
-
-        </>
     )
 }
 

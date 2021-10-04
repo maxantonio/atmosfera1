@@ -6,16 +6,14 @@
 
 import React from 'react'
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
-
-import {confirmAlert} from "react-confirm-alert";
 import 'react-confirm-alert/src/react-confirm-alert.css';
-export const wrapRootElement = ({ element }) => {
-    return (
-        <GoogleReCaptchaProvider useRecaptchaNet reCaptchaKey="6LcYnpkaAAAAAMu0uTl7OyCCYgBKGYoLNpUdc5eR">
-            {element}
-        </GoogleReCaptchaProvider>
-    )
-}
+// export const wrapRootElement = ({ element }) => {
+//     return (
+//         <GoogleReCaptchaProvider useRecaptchaNet reCaptchaKey="6LcYnpkaAAAAAMu0uTl7OyCCYgBKGYoLNpUdc5eR">
+//             {element}
+//         </GoogleReCaptchaProvider>
+//     )
+// }
 
 const $ = require("jquery")
 
