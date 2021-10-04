@@ -1,0 +1,53 @@
+{
+  "name": "atmosfera",
+  "private": true,
+  "description": "developing quickly with Gatsby",
+  "version": "0.1.0",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "axios": "^0.20.0",
+    "gatsby": "^2.24.54",
+    "gatsby-image": "^2.4.4",
+    "gatsby-plugin-manifest": "^2.4.5",
+    "gatsby-plugin-offline": "^3.2.3",
+    "gatsby-plugin-react-helmet": "^3.3.1",
+    "gatsby-plugin-sharp": "^2.6.4",
+    "gatsby-source-filesystem": "^2.3.4",
+    "gatsby-transformer-sharp": "^2.5.2",
+    "jquery": "^3.5.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-confirm-alert": "^2.7.0",
+    "react-dom": "^16.12.0",
+    "react-google-recaptcha-v3": "^1.5.2",
+    "react-helmet": "^6.0.0",
+    "sharp": "^0.28.1",
+    "smooth-scroll": "^16.1.3"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
