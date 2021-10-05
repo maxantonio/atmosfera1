@@ -5,7 +5,7 @@
  */
 
 import React from 'react'
-import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
+import {GoogleReCaptchaProvider} from 'react-google-recaptcha-v3'
 import 'react-confirm-alert/src/react-confirm-alert.css';
 // export const wrapRootElement = ({ element }) => {
 //     return (
@@ -20,5 +20,8 @@ const $ = require("jquery")
 
 export const onInitialClientRender = () => {
 
+    $(document).ready(function () {
+        window.funciones()
+    });
 
 }

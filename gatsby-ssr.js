@@ -93,7 +93,7 @@ export const onRenderBody = ({setHeadComponents, setPostBodyComponents}, pluginO
         <script src={withPrefix('js/plugins/elementor/assets/js/webpack.runtime.js')} type="text/javascript"/>,
         <script src={withPrefix('js/plugins/elementor/assets/js/frontend-modules.js')} type="text/javascript"/>,
         <script src={withPrefix('js/plugins/elementor/assets/lib/waypoints/waypoints.js')} type="text/javascript"/>,
-        <script src={withPrefix('js/plugins/elementor/assets/js/frontend.js')} type="text/javascript"/>,
         <script src={withPrefix('js/regados.js')} type="text/javascript"/>,
+        <script src={withPrefix('js/plugins/elementor/assets/js/frontend.js')} type="text/javascript"/>,
     ])
 }

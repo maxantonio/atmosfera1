@@ -28,6 +28,7 @@ jQuery(function ($) {
         theme: "tooltipster-shadow",
         delay: 0,
     });
+    console.log('regados')
 });
 
 var elementorFrontendConfig = {

@@ -28,6 +28,8 @@ const IndexPage = (props) => {
     useEffect(() => {
         if (isMountedComponent.current) {
             if (typeof window !== "undefined") {
+                window.funciones()
+                console.log('index')
             }
         }
         return () => {
